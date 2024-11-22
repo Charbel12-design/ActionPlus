@@ -1,0 +1,183 @@
+[WARN] [2024-11-22 16:04:22] PHP CLI is disabled manually, plugin will omit all PHP CLI steps.
+[WARN] [2024-11-22 16:04:22] PHP CLI file cannot be executed due to unknown reason.
+[STEP] [2024-11-22 16:04:22] Initializing backup...
+[INFO] [2024-11-22 16:04:22] Backup & Migration version: 1.4.6
+[INFO] [2024-11-22 16:04:22] Site which will be backed up: ***site_url***
+[INFO] [2024-11-22 16:04:22] PHP Version: 8.1.23
+[INFO] [2024-11-22 16:04:22] WP Version: 6.7.1
+[INFO] [2024-11-22 16:04:22] MySQL Version: 8.0.16
+[INFO] [2024-11-22 16:04:22] MySQL Max Length: 16777216
+[INFO] [2024-11-22 16:04:22] Web server: nginx/1.16.0
+[INFO] [2024-11-22 16:04:22] Max execution time (in seconds): 1200
+[INFO] [2024-11-22 16:04:22] Memory limit (server): 256M
+[INFO] [2024-11-22 16:04:22] Memory limit (wp-config): 40M
+[INFO] [2024-11-22 16:04:22] Memory limit (wp-config admin): 256M
+[INFO] [2024-11-22 16:04:22] Max rows per query (this site): 2000
+[INFO] [2024-11-22 16:04:22] Checking if backup dir is writable...
+[INFO] [2024-11-22 16:04:22] Initializing custom error handler
+[SUCCESS] [2024-11-22 16:04:22] Yup it is writable...
+[STEP] [2024-11-22 16:04:22] Scanning files...
+[WARN] [2024-11-22 16:04:31] Removing file from backup (due to path rules): C:\Users\Royal Computer\Local Sites\action\app\public\wp-content\backup-migration-config.php
+[INFO] [2024-11-22 16:04:31] Total size of excluded files: 2390 bytes
+[VERBOSE] [2024-11-22 16:04:31] Total size of excluded files (bytes): 2390
+[STEP] [2024-11-22 16:04:31] Checking free space, reserving...
+[INFO] [2024-11-22 16:04:31] Requires at least 608927135 bytes. [580.72 MB]
+[INFO] [2024-11-22 16:04:31] Disk free space function is not disabled - using it...
+[INFO] [2024-11-22 16:04:31] Checking this path/partition: C:\Users\Royal Computer\Local Sites\action\app\public\wp-content\***backup_path***\backups
+[SUCCESS] [2024-11-22 16:04:31] There is 5,779.53 MB free. [5.64 GB]
+[SUCCESS] [2024-11-22 16:04:31] Great! We have enough space.
+[SUCCESS] [2024-11-22 16:04:31] Confirmed, there is more than enough space, checked: 608927135 bytes
+[INFO] [2024-11-22 16:04:31] Scanning done - found 16138 files...
+[SUCCESS] [2024-11-22 16:04:31] Backup initialized...
+[STEP] [2024-11-22 16:04:31] Initializing archiving system...
+[SUCCESS] [2024-11-22 16:04:31] Archive system initialized...
+[STEP] [2024-11-22 16:04:31] Preparing map of files...
+[SUCCESS] [2024-11-22 16:04:31] Files prepared.
+[INFO] [2024-11-22 16:04:31] Starting compression process...
+[STEP] [2024-11-22 16:04:31] Smart memory calculation...
+[INFO] [2024-11-22 16:04:31] There is 256 MBs of memory to use
+[INFO] [2024-11-22 16:04:31] WordPress memory limit: 256 MBs
+[SUCCESS] [2024-11-22 16:04:31] Setting the safe limit to 57 MB
+[INFO] [2024-11-22 16:04:31] ZipArchive is available this process should use ZipArchive
+[INFO] [2024-11-22 16:04:31] Legacy setting: Using default modules depending on user server
+[STEP] [2024-11-22 16:04:31] Making database backup (using v3 engine, requires at least v1.2.2 to restore)
+[INFO] [2024-11-22 16:04:31] Iterating database...
+[INFO] [2024-11-22 16:04:31] Memory usage after initialization: 18.82 MB
+[VERBOSE] [2024-11-22 16:04:31] Exporting database via zip.php
+[INFO] [2024-11-22 16:04:31] Scan found 46 tables (2760 rows), estimated total size: 14.41 MB.
+[INFO] [2024-11-22 16:04:31] Memory usage after getting table names: 18.84 MB 
+[INFO] [2024-11-22 16:04:31] Getting table recipes...
+[INFO] [2024-11-22 16:04:31] Table recipes have been exported.
+[INFO] [2024-11-22 16:04:31] Memory usage after loading recipes: 18.88 MB 
+[INFO] [2024-11-22 16:04:31] Saving recipes...
+[INFO] [2024-11-22 16:04:31] Recipes saved.
+[INFO] [2024-11-22 16:04:31] Memory usage after recipe off-load: 18.85 MB
+[INFO] [2024-11-22 16:04:31] Exporting table data...
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_actionscheduler_actions (1/46, 0.19 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_actionscheduler_actions finished (0.07155s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_actionscheduler_claims (2/46, 0.03 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_actionscheduler_claims is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_actionscheduler_groups (3/46, 0.03 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_actionscheduler_groups finished (0.00293s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_actionscheduler_logs (4/46, 0.08 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_actionscheduler_logs finished (0.05715s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_commentmeta (5/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_commentmeta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_comments (6/46, 0.09 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_comments finished (0.00672s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_e_events (7/46, 0.03 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_e_events is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_frmt_form_entry (8/46, 0.06 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_frmt_form_entry is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_frmt_form_entry_meta (9/46, 0.06 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_frmt_form_entry_meta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_frmt_form_reports (10/46, 0.02 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_frmt_form_reports finished (0.00199s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_frmt_form_views (11/46, 0.08 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_frmt_form_views is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_commentmeta (12/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_commentmeta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_comments (13/46, 0.02 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_comments is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_donationmeta (14/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_donationmeta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_donormeta (15/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_donormeta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_donors (16/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_donors is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_formmeta (17/46, 0.08 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_give_formmeta finished (0.00748s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_log (18/46, 0.06 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_give_log finished (0.00264s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_migrations (19/46, 0.02 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_give_migrations finished (0.00593s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_revenue (20/46, 0.02 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_revenue is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_sequential_ordering (21/46, 0.02 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_sequential_ordering is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_sessions (22/46, 0.03 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_sessions is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_subscriptionmeta (23/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_subscriptionmeta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_give_subscriptions (24/46, 0.08 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_give_subscriptions is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_links (25/46, 0.03 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_links is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_image_storage (26/46, 0.03 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_nextend2_image_storage finished (0.00329s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_section_storage (27/46, 0.08 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_nextend2_section_storage finished (0.00272s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_smartslider3_generators (28/46, 0.02 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_nextend2_smartslider3_generators is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_smartslider3_sliders (29/46, 0.05 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_nextend2_smartslider3_sliders finished (0.00360s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_smartslider3_sliders_xref (30/46, 0.03 MB)
+[INFO] [2024-11-22 16:04:31] Table ***_nextend2_smartslider3_sliders_xref is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_nextend2_smartslider3_slides (31/46, 0.14 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_nextend2_smartslider3_slides finished (0.00594s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_options (32/46, 5.11 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_options finished (0.16835s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_postmeta (33/46, 3.67 MB)
+[SUCCESS] [2024-11-22 16:04:31] Table export for: ***_postmeta finished (0.21942s)
+[STEP] [2024-11-22 16:04:31] Getting data of table: ***_posts (34/46, 3.30 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_posts finished (0.39046s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_smush_dir_images (35/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:32] Table ***_smush_dir_images is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_term_relationships (36/46, 0.03 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_term_relationships finished (0.00850s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_term_taxonomy (37/46, 0.05 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_term_taxonomy finished (0.00322s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_termmeta (38/46, 0.05 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_termmeta finished (0.00372s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_terms (39/46, 0.05 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_terms finished (0.00398s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_usermeta (40/46, 0.05 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_usermeta finished (0.01009s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_users (41/46, 0.06 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_users finished (0.00352s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_wc_fedapay_orders_transactions (42/46, 0.05 MB)
+[INFO] [2024-11-22 16:04:32] Table ***_wc_fedapay_orders_transactions is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_wpforms_logs (43/46, 0.02 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_wpforms_logs finished (0.00359s)
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_wpforms_payment_meta (44/46, 0.06 MB)
+[INFO] [2024-11-22 16:04:32] Table ***_wpforms_payment_meta is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_wpforms_payments (45/46, 0.16 MB)
+[INFO] [2024-11-22 16:04:32] Table ***_wpforms_payments is empty, saving only recipe.
+[STEP] [2024-11-22 16:04:32] Getting data of table: ***_wpforms_tasks_meta (46/46, 0.02 MB)
+[SUCCESS] [2024-11-22 16:04:32] Table export for: ***_wpforms_tasks_meta finished (0.00414s)
+[INFO] [2024-11-22 16:04:32] Table data exported.
+[INFO] [2024-11-22 16:04:32] Memory usage after data export: 18.84 MB
+[INFO] [2024-11-22 16:04:32] Entire process took: 1.2961 s
+[SUCCESS] [2024-11-22 16:04:32] Database backup finished
+[STEP] [2024-11-22 16:04:32] Making archive
+[INFO] [2024-11-22 16:04:32] Compressing...
+[WARN] [2024-11-22 16:04:32] Backup will run as single-request, may be unstable...
+[INFO] [2024-11-22 16:04:32] Using ZipArchive extension for this backup process.
+[STEP] [2024-11-22 16:04:32] Adding database SQL file(s) to the backup file.
+[VERBOSE] [2024-11-22 16:04:32] Database files in total found: 46
+[SUCCESS] [2024-11-22 16:04:32] Database added to the backup successfully.
+[STEP] [2024-11-22 16:04:32] Performing site files backup...
+[INFO] [2024-11-22 16:04:32] Chunks contain 2000 files.
+[INFO] [2024-11-22 16:04:48] Milestone: 2000/16138
+[INFO] [2024-11-22 16:04:51] Milestone: 4000/16138
+[INFO] [2024-11-22 16:04:56] Milestone: 6000/16138
+[INFO] [2024-11-22 16:04:58] Milestone: 8000/16138
+[INFO] [2024-11-22 16:05:35] Milestone: 10000/16138
+[INFO] [2024-11-22 16:05:47] Milestone: 12000/16138
+[INFO] [2024-11-22 16:06:02] Milestone: 14000/16138
+[INFO] [2024-11-22 16:06:36] Milestone: 16000/16138
+[INFO] [2024-11-22 16:06:39] Milestone: 16138/16138
+[SUCCESS] [2024-11-22 16:06:39] Compressed 16138 files
+[INFO] [2024-11-22 16:06:39] Archiving of 16138 files took: 127.98s
+[STEP] [2024-11-22 16:06:39] Finalizing backup
+[INFO] [2024-11-22 16:06:39] Generating manifest file and saving current live-log...
+[INFO] [2024-11-22 16:06:40] Adding manifest...
+[SUCCESS] [2024-11-22 16:06:41] Manifest file and logs added to the backup. Temporary files removed.
+[STEP] [2024-11-22 16:06:41] Closing files and archives
+[SUCCESS] [2024-11-22 16:06:41] Cleanup finished, backup complete.
+[SUCCESS] [2024-11-22 16:06:41] New backup created and its name is: *****.zip
+[END-CODE] [2024-11-22 16:06:41] #001
+
+[DOWNLOAD GENERATED] File downloaded on (server time): 2024-11-22 16:08:03
+[DOWNLOAD GENERATED] Last update (seconds): 82 seconds ago 
+[DOWNLOAD GENERATED] Last update (date): 2024-11-22 16:06:41 
